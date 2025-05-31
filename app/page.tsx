@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Image from "next/image"
 import {
   BookOpen,
   Brain,
@@ -20,14 +21,19 @@ import {
 import Link from "next/link"
 
 export default function LearnixPreLaunch() {
-  const cacheBuster = `?v=${Date.now()}`
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-red-50">
       {/* Header */}
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <img src="/images/learnix-logo.png" alt="Learnix - AI-powered exam preparation" className="h-8 w-auto" />
+            <Image 
+              src="/images/learnix-logo.png" 
+              alt="Learnix - AI-powered exam preparation" 
+              width={32} 
+              height={32} 
+              className="h-8 w-auto" 
+            />
             <Badge className="bg-red-100 text-red-700 text-xs">BETA</Badge>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
@@ -220,7 +226,7 @@ export default function LearnixPreLaunch() {
                     </a>
                   </Button>
                   <p className="text-xs text-gray-500 text-center">
-                    We'll notify you as soon as beta access is available. No spam, ever.
+                    We&apos;ll notify you as soon as beta access is available. No spam, ever.
                   </p>
                 </form>
               </div>
@@ -267,7 +273,7 @@ export default function LearnixPreLaunch() {
                 </div>
                 <CardTitle>Curriculum Alignment</CardTitle>
                 <CardDescription>
-                  Every question will be aligned with your specific state curriculum, ensuring you're studying exactly
+                  Every question will be aligned with your specific state curriculum, ensuring you&apos;re studying exactly
                   what you need for your exams.
                 </CardDescription>
               </CardHeader>
@@ -433,7 +439,7 @@ export default function LearnixPreLaunch() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Peace of Mind for Parents</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Stay informed about your child's progress with transparent dashboards and detailed insights into their
+              Stay informed about your child&apos;s progress with transparent dashboards and detailed insights into their
               learning journey. Coming in our beta release.
             </p>
           </div>
@@ -443,7 +449,7 @@ export default function LearnixPreLaunch() {
               <div className="bg-white rounded-2xl p-8 shadow-xl">
                 <div className="bg-gradient-to-br from-blue-50 to-red-50 rounded-lg p-6 shadow-lg">
                   <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-lg font-semibold">Sarah's Progress Dashboard</h3>
+                    <h3 className="text-lg font-semibold">Sarah&apos;s Progress Dashboard</h3>
                     <div className="flex items-center space-x-2">
                       <Badge className="bg-green-100 text-green-700">Beta Preview</Badge>
                     </div>
@@ -502,7 +508,7 @@ export default function LearnixPreLaunch() {
               <div>
                 <h3 className="text-2xl font-bold mb-4">Transparent Progress Tracking</h3>
                 <p className="text-gray-600 mb-6">
-                  Get real-time insights into your child's learning progress with detailed dashboards that will show
+                  Get real-time insights into your child&apos;s learning progress with detailed dashboards that will show
                   strengths, areas for improvement, and study recommendations.
                 </p>
               </div>
@@ -582,8 +588,8 @@ export default function LearnixPreLaunch() {
                   <Badge className="ml-2 bg-blue-100 text-blue-700 text-xs">PILOT TESTER</Badge>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  "The AI personalization in the pilot was incredible! It identified my weak areas in calculus and
-                  created targeted questions that really helped me improve."
+                  &quot;The AI personalization in the pilot was incredible! It identified my weak areas in calculus and
+                  created targeted questions that really helped me improve.&quot;
                 </p>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
@@ -606,8 +612,8 @@ export default function LearnixPreLaunch() {
                   <Badge className="ml-2 bg-red-100 text-red-700 text-xs">PILOT TESTER</Badge>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  "As a parent, the progress dashboard preview was exactly what I needed. I could finally see where my
-                  daughter needed help without having to guess."
+                  &quot;As a parent, the progress dashboard preview was exactly what I needed. I could finally see where my
+                  daughter needed help without having to guess.&quot;
                 </p>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
@@ -630,8 +636,8 @@ export default function LearnixPreLaunch() {
                   <Badge className="ml-2 bg-green-100 text-green-700 text-xs">PILOT TESTER</Badge>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  "The curriculum alignment was spot-on for Queensland. Every question felt relevant to what I was
-                  studying. Can't wait for the full beta release!"
+                  &quot;The curriculum alignment was spot-on for Queensland. Every question felt relevant to what I was
+                  studying. Can&apos;t wait for the full beta release!&quot;
                 </p>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
@@ -651,7 +657,7 @@ export default function LearnixPreLaunch() {
       {/* Final CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-red-600 text-white">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Don't Miss Out on the Future of Exam Prep</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Don&apos;t Miss Out on the Future of Exam Prep</h2>
           <p className="text-xl mb-8 opacity-90">
             Join the exclusive Learnix beta program and be among the first Australian students to experience
             revolutionary AI-powered learning.
@@ -689,9 +695,11 @@ export default function LearnixPreLaunch() {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <img
+                <Image
                   src="/images/learnix-logo.png"
                   alt="Learnix - AI-powered exam preparation"
+                  width={24}
+                  height={24}
                   className="h-6 w-auto"
                 />
                 <Badge className="bg-red-100 text-red-700 text-xs">BETA</Badge>

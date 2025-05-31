@@ -22,9 +22,9 @@ import Link from "next/link"
 
 export default function LearnixPreLaunch() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-red-50">
+    <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+      <header className="border-b border-border bg-background/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <Image 
@@ -34,25 +34,25 @@ export default function LearnixPreLaunch() {
               height={32} 
               className="h-8 w-auto" 
             />
-            <Badge className="bg-red-100 text-red-700 text-xs">BETA</Badge>
+            <Badge variant="destructive" className="text-xs">BETA</Badge>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <Link href="#features" className="text-muted-foreground hover:text-primary transition-colors">
               Features
             </Link>
-            <Link href="#parents" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <Link href="#parents" className="text-muted-foreground hover:text-primary transition-colors">
               For Parents
             </Link>
-            <Link href="#how-it-works" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <Link href="#how-it-works" className="text-muted-foreground hover:text-primary transition-colors">
               How It Works
             </Link>
-            <Link href="#beta" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <Link href="#beta" className="text-muted-foreground hover:text-primary transition-colors">
               Beta Access
             </Link>
           </nav>
           <div className="flex items-center space-x-4">
             <Button 
-              className="bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-700 hover:to-red-700"
+              className="bg-primary hover:bg-primary/90"
               asChild
             >
               <a
@@ -75,48 +75,48 @@ export default function LearnixPreLaunch() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100">
+                  <Badge variant="secondary" className="text-primary">
                     🇦🇺 Designed for Australian Students
                   </Badge>
-                  <Badge className="bg-red-100 text-red-700 hover:bg-red-100">
+                  <Badge variant="destructive">
                     <Calendar className="w-3 h-3 mr-1" />
                     Launching Q2 2024
                   </Badge>
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                   The Future of{" "}
-                  <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
+                  <span className="text-primary">
                     Exam Prep
                   </span>{" "}
                   is Here
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-xl text-muted-foreground leading-relaxed">
                   Be among the first to experience Learnix - the revolutionary AI platform that transforms publicly
                   available study materials into personalized practice questions aligned with your state curriculum.
                   Join our exclusive beta and shape the future of exam preparation.
                 </p>
               </div>
 
-              <div className="bg-gradient-to-r from-blue-50 to-red-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-card rounded-lg p-6 border border-border">
                 <h3 className="font-semibold text-lg mb-3 flex items-center">
-                  <Gift className="w-5 h-5 mr-2 text-red-600" />
+                  <Gift className="w-5 h-5 mr-2 text-destructive" />
                   Exclusive Beta Benefits
                 </h3>
-                <ul className="space-y-2 text-gray-700">
+                <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 mr-2 text-green-600" />
+                    <CheckCircle className="w-4 h-4 mr-2 text-primary" />
                     Lifetime access to premium features
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 mr-2 text-green-600" />
+                    <CheckCircle className="w-4 h-4 mr-2 text-primary" />
                     Direct input on platform development
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 mr-2 text-green-600" />
+                    <CheckCircle className="w-4 h-4 mr-2 text-primary" />
                     Priority customer support
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 mr-2 text-green-600" />
+                    <CheckCircle className="w-4 h-4 mr-2 text-primary" />
                     Early access to new features
                   </li>
                 </ul>
@@ -125,7 +125,7 @@ export default function LearnixPreLaunch() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-700 hover:to-red-700 text-lg px-8"
+                  className="bg-primary hover:bg-primary/90 text-lg px-8"
                   asChild
                 >
                   <a
@@ -145,8 +145,8 @@ export default function LearnixPreLaunch() {
             </div>
 
             <div className="relative">
-              <div className="relative bg-gradient-to-br from-blue-100 to-red-100 rounded-2xl p-8 shadow-2xl">
-                <div className="aspect-video bg-gray-900 rounded-lg flex items-center justify-center relative overflow-hidden">
+              <div className="relative bg-card rounded-2xl p-8 shadow-lg border border-border">
+                <div className="aspect-video bg-muted rounded-lg flex items-center justify-center relative overflow-hidden">
                   <iframe
                     width="100%"
                     height="100%"
@@ -156,29 +156,29 @@ export default function LearnixPreLaunch() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>
-                  <div className="absolute bottom-4 left-4 text-white/80 text-sm bg-black/50 px-2 py-1 rounded">
+                  <div className="absolute bottom-4 left-4 text-muted-foreground text-sm bg-background/50 px-2 py-1 rounded">
                     Platform Preview
                   </div>
-                  <div className="absolute top-4 right-4 bg-red-500 text-white px-2 py-1 rounded text-xs font-medium">
+                  <div className="absolute top-4 right-4 bg-destructive text-destructive-foreground px-2 py-1 rounded text-xs font-medium">
                     BETA PREVIEW
                   </div>
                 </div>
-                <div className="mt-4 text-center text-gray-600">
+                <div className="mt-4 text-center text-muted-foreground">
                   Exclusive preview: See how AI creates personalized questions from your curriculum
                 </div>
               </div>
 
               {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 bg-white rounded-lg shadow-lg p-3 border">
+              <div className="absolute -top-4 -right-4 bg-card rounded-lg shadow-lg p-3 border border-border">
                 <div className="flex items-center space-x-2">
-                  <Zap className="w-5 h-5 text-red-500" />
+                  <Zap className="w-5 h-5 text-destructive" />
                   <span className="text-sm font-medium">AI-Powered</span>
                 </div>
               </div>
 
-              <div className="absolute -bottom-4 -left-4 bg-white rounded-lg shadow-lg p-3 border">
+              <div className="absolute -bottom-4 -left-4 bg-card rounded-lg shadow-lg p-3 border border-border">
                 <div className="flex items-center space-x-2">
-                  <Target className="w-5 h-5 text-blue-500" />
+                  <Target className="w-5 h-5 text-primary" />
                   <span className="text-sm font-medium">Beta Ready</span>
                 </div>
               </div>
@@ -188,11 +188,11 @@ export default function LearnixPreLaunch() {
       </section>
 
       {/* Beta Registration Section */}
-      <section id="beta" className="py-20 bg-white">
+      <section id="beta" className="py-20 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Join the Learnix Beta Program</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Be among the first 1,000 students to experience the future of AI-powered exam preparation. Limited spots
               available for our exclusive beta launch.
             </p>
